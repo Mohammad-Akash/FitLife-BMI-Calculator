@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife BMI - Your Health & Fitness Journey Starts Here</title>
+    <meta name="description" content="Calculate your BMI, track calories, and discover health tips with FitLife BMI. Professional tools and resources for your wellness journey.">
+    <meta name="keywords" content="BMI calculator, calorie calculator, health, fitness, wellness, nutrition, weight management">
+    <meta name="author" content="FitLife BMI">
+    
+    <meta property="og:title" content="FitLife BMI - Health & Fitness Tools">
+    <meta property="og:description" content="Professional BMI and calorie calculators with expert health tips and nutrition advice.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FitLife BMI - Health & Fitness Tools">
+    <meta name="twitter:description" content="Calculate BMI, track calories, discover wellness tips">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="nav-logo" data-nav-link>
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                    <span>FitLife BMI</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link" data-nav-link>Home</a>
+                    <a href="#bmi-calculator" class="nav-link" data-nav-link>BMI Calculator</a>
+                    <a href="#calorie-calculator" class="nav-link" data-nav-link>Calorie Calculator</a>
+                    <a href="#about" class="nav-link" data-nav-link>About</a>
+                    <a href="#blog" class="nav-link" data-nav-link>Blog</a>
+                    <a href="#contact" class="nav-link" data-nav-link>Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <main class="main-content">
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="hero animate-fade-in">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Your Health Journey Starts Here</h1>
+                        <p class="hero-description">
+                            Discover your ideal fitness level with our professional BMI calculator and personalized health tools. 
+                            Take control of your wellness journey today.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#bmi-calculator" class="btn btn-primary" data-nav-link>
+                                Start BMI Check
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            <a href="#about" class="btn btn-secondary" data-nav-link>Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero-image animate-slide-up">
+                        <img src="../assets/hero-fitness.jpg" alt="Fitness and healthy lifestyle with person exercising">
+                    </div>
+                </section>
+
+                <!-- Features Section -->
+                <section class="features">
+                    <h2 class="section-title">Your Complete Health Toolkit</h2>
+                    <div class="features-grid">
+                        <div class="feature-card animate-fade-in">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">BMI Calculator</h3>
+                            <p class="feature-description">Accurately calculate your Body Mass Index with our professional tool.</p>
+                            <a href="#bmi-calculator" class="feature-link" data-nav-link>Calculate Now →</a>
+                        </div>
+                        <div class="feature-card animate-fade-in" style="animation-delay: 0.1s;">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Calorie Tracker</h3>
+                            <p class="feature-description">Estimate your daily caloric needs based on your lifestyle.</p>
+                            <a href="#calorie-calculator" class="feature-link" data-nav-link>Try Calculator →</a>
+                        </div>
+                        <div class="feature-card animate-fade-in" style="animation-delay: 0.2s;">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Health Resources</h3>
+                            <p class="feature-description">Access expert articles and tips for a healthier lifestyle.</p>
+                            <a href="#blog" class="feature-link" data-nav-link>Read Articles →</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <section class="cta-section">
+                    <div class="cta-card">
+                        <h2 class="cta-title">Ready to Transform Your Health?</h2>
+                        <p class="cta-description">
+                            Join thousands of users who've taken the first step toward better health. Start with a simple BMI check.
+                        </p>
+                        <a href="#bmi-calculator" class="btn btn-primary" data-nav-link>Get Started Free</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- BMI Calculator Page -->
+    <div id="bmi-calculator" class="page">
+        <main class="main-content">
+            <div class="container">
+                <div class="page-header animate-fade-in">
+                    <h1 class="page-title">BMI Calculator</h1>
+                    <p class="page-description">Calculate your Body Mass Index and understand your health status</p>
+                </div>
+
+                <div class="calculator-layout">
+                    <div class="card animate-slide-up">
+                        <div class="card-header">
+                            <h2 class="card-title">Enter Your Details</h2>
+                            <p class="card-description">Choose your preferred unit system</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="unit-tabs">
+                                <button class="tab-btn active" data-unit="metric">Metric (kg, cm)</button>
+                                <button class="tab-btn" data-unit="imperial">Imperial (lbs, in)</button>
+                            </div>
+
+                            <form id="bmiForm" class="calculator-form">
+                                <div class="form-group">
+                                    <label for="bmiWeight" class="form-label">Weight</label>
+                                    <input type="number" id="bmiWeight" class="form-input" placeholder="70" step="0.1" required>
+                                    <span class="unit-label" id="weightUnit">kg</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bmiHeight" class="form-label">Height</label>
+                                    <input type="number" id="bmiHeight" class="form-input" placeholder="170" step="0.1" required>
+                                    <span class="unit-label" id="heightUnit">cm</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full">Calculate BMI</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="bmiResult" class="result-section hidden">
+                        <div class="card animate-fade-in">
+                            <div class="card-header">
+                                <h2 class="card-title">Your BMI Result</h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="bmi-result-display">
+                                    <div class="bmi-value" id="bmiValue">0</div>
+                                    <div class="bmi-category" id="bmiCategory">Normal</div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="bmiProgress"></div>
+                                </div>
+                                <div class="bmi-ranges">
+                                    <div class="range-item">
+                                        <span class="range-label">Underweight</span>
+                                        <span class="range-value">&lt; 18.5</span>
+                                    </div>
+                                    <div class="range-item">
+                                        <span class="range-label">Normal</span>
+                                        <span class="range-value">18.5 - 24.9</span>
+                                    </div>
+                                    <div class="range-item">
+                                        <span class="range-label">Overweight</span>
+                                        <span class="range-value">25 - 29.9</span>
+                                    </div>
+                                    <div class="range-item">
+                                        <span class="range-label">Obese</span>
+                                        <span class="range-value">&gt; 30</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card animate-fade-in" style="animation-delay: 0.2s;">
+                            <div class="card-header">
+                                <h2 class="card-title">What This Means</h2>
+                            </div>
+                            <div class="card-content">
+                                <p id="bmiAdvice" class="advice-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card info-card">
+                    <div class="card-header">
+                        <h2 class="card-title">About BMI</h2>
+                    </div>
+                    <div class="card-content">
+                        <p class="info-text">
+                            Body Mass Index (BMI) is a measure of body fat based on height and weight. While BMI is a useful 
+                            screening tool, it doesn't directly measure body fat or account for muscle mass. Athletes and very 
+                            muscular individuals may have a high BMI but low body fat. Always consult healthcare professionals 
+                            for personalized health advice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Calorie Calculator Page -->
+    <div id="calorie-calculator" class="page">
+        <main class="main-content">
+            <div class="container">
+                <div class="page-header animate-fade-in">
+                    <h1 class="page-title">Calorie Calculator</h1>
+                    <p class="page-description">Estimate your daily caloric needs based on your age, gender, weight, height, and activity level</p>
+                </div>
+
+                <div class="calculator-layout">
+                    <div class="card animate-slide-up">
+                        <div class="card-header">
+                            <h2 class="card-title">Your Information</h2>
+                            <p class="card-description">Enter your details below</p>
+                        </div>
+                        <div class="card-content">
+                            <form id="calorieForm" class="calculator-form">
+                                <div class="form-group">
+                                    <label class="form-label">Gender</label>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="male" checked>
+                                            <span>Male</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="female">
+                                            <span>Female</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="calAge" class="form-label">Age (years)</label>
+                                    <input type="number" id="calAge" class="form-input" placeholder="25" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="calWeight" class="form-label">Weight (kg)</label>
+                                    <input type="number" id="calWeight" class="form-input" placeholder="70" step="0.1" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="calHeight" class="form-label">Height (cm)</label>
+                                    <input type="number" id="calHeight" class="form-input" placeholder="170" step="0.1" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="activity" class="form-label">Activity Level</label>
+                                    <select id="activity" class="form-select" required>
+                                        <option value="">Select activity level</option>
+                                        <option value="1.2">Sedentary (little or no exercise)</option>
+                                        <option value="1.375">Lightly active (1-3 days/week)</option>
+                                        <option value="1.55">Moderately active (3-5 days/week)</option>
+                                        <option value="1.725">Very active (6-7 days/week)</option>
+                                        <option value="1.9">Extra active (physical job, training 2x/day)</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full">Calculate Calories</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="calorieResult" class="result-section hidden">
+                        <div class="card animate-fade-in">
+                            <div class="card-header">
+                                <h2 class="card-title">Your Daily Calorie Needs</h2>
+                                <p class="card-description">Based on your information</p>
+                            </div>
+                            <div class="card-content">
+                                <div class="calorie-result-primary">
+                                    <svg class="result-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"></path>
+                                        <path d="M12 6v6l4 2"></path>
+                                    </svg>
+                                    <div class="result-label">Basal Metabolic Rate (BMR)</div>
+                                    <div class="result-value" id="bmrValue">0</div>
+                                    <div class="result-unit">calories/day</div>
+                                </div>
+
+                                <div class="calorie-result-secondary">
+                                    <div class="result-label">Maintain Weight</div>
+                                    <div class="result-value-small" id="maintenanceValue">0</div>
+                                    <div class="result-unit-small">calories/day</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card animate-fade-in" style="animation-delay: 0.1s;">
+                            <div class="card-header">
+                                <h2 class="card-title">
+                                    <svg class="title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 6l-9.5 9.5-5-5L1 18"></path>
+                                    </svg>
+                                    Weight Loss Goals
+                                </h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="goal-item">
+                                    <span class="goal-label">Mild loss (0.25 kg/week)</span>
+                                    <span class="goal-value" id="mildLoss">0 cal</span>
+                                </div>
+                                <div class="goal-item">
+                                    <span class="goal-label">Weight loss (0.5 kg/week)</span>
+                                    <span class="goal-value" id="weightLoss">0 cal</span>
+                                </div>
+                                <div class="goal-item">
+                                    <span class="goal-label">Extreme loss (1 kg/week)</span>
+                                    <span class="goal-value" id="extremeLoss">0 cal</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card animate-fade-in" style="animation-delay: 0.2s;">
+                            <div class="card-header">
+                                <h2 class="card-title">
+                                    <svg class="title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 18l-9.5-9.5-5 5L1 6"></path>
+                                    </svg>
+                                    Weight Gain Goals
+                                </h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="goal-item">
+                                    <span class="goal-label">Mild gain (0.25 kg/week)</span>
+                                    <span class="goal-value" id="mildGain">0 cal</span>
+                                </div>
+                                <div class="goal-item">
+                                    <span class="goal-label">Weight gain (0.5 kg/week)</span>
+                                    <span class="goal-value" id="weightGain">0 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card info-card">
+                    <div class="card-header">
+                        <h2 class="card-title">About This Calculator</h2>
+                    </div>
+                    <div class="card-content">
+                        <p class="info-text">
+                            This calculator uses the Mifflin-St Jeor Equation to estimate your BMR (Basal Metabolic Rate) 
+                            and daily caloric needs. BMR represents the calories your body burns at rest. The total daily 
+                            energy expenditure is calculated by multiplying your BMR by an activity factor. Remember, these 
+                            are estimates - individual needs may vary based on metabolism, body composition, and other factors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <main class="main-content">
+            <div class="container">
+                <div class="page-header animate-fade-in">
+                    <h1 class="page-title">About FitLife BMI</h1>
+                    <p class="page-description">Your trusted partner in health and wellness</p>
+                </div>
+
+                <div class="about-image animate-slide-up">
+                    <img src="../assets/nutrition.jpg" alt="Healthy food and nutrition with fresh fruits and vegetables">
+                </div>
+
+                <div class="card story-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Our Story</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="story-content">
+                            <p>
+                                FitLife BMI was born from a simple idea: everyone deserves access to professional-grade health 
+                                tools without barriers. We recognized that many people struggle to understand their health metrics 
+                                and make informed decisions about their wellness journey.
+                            </p>
+                            <p>
+                                Our team of health enthusiasts, developers, and wellness advocates came together to create a 
+                                platform that demystifies health calculations. We believe that knowledge is power, and by providing 
+                                accurate, easy-to-use tools, we can help people take the first step toward better health.
+                            </p>
+                            <p>
+                                Today, FitLife BMI serves thousands of users worldwide, helping them calculate BMI, estimate 
+                                caloric needs, and access valuable health information. We're committed to continually improving 
+                                our tools and expanding our resources to support your wellness goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card animate-fade-in">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Our Mission</h3>
+                        <p class="value-description">To empower individuals with accessible, accurate health tools that support their wellness journey.</p>
+                    </div>
+                    <div class="value-card animate-fade-in" style="animation-delay: 0.1s;">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Community First</h3>
+                        <p class="value-description">We believe in creating a supportive environment where health information is free and available to all.</p>
+                    </div>
+                    <div class="value-card animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Health Focus</h3>
+                        <p class="value-description">Promoting evidence-based approaches to fitness, nutrition, and overall well-being.</p>
+                    </div>
+                    <div class="value-card animate-fade-in" style="animation-delay: 0.3s;">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.11"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Quality Tools</h3>
+                        <p class="value-description">Providing professionally developed calculators and resources backed by health science.</p>
+                    </div>
+                </div>
+
+                <div class="card commitment-card">
+                    <div class="card-content commitment-content">
+                        <h2 class="commitment-title">Our Commitment to You</h2>
+                        <p class="commitment-text">
+                            We're dedicated to providing free, accurate, and user-friendly health tools. Your privacy 
+                            is paramount - we don't store your personal health data. Our calculators use industry-standard 
+                            formulas, and we continuously update our content based on the latest health research.
+                        </p>
+                        <p class="commitment-text">
+                            While our tools provide valuable insights, remember that they're for informational purposes. 
+                            Always consult healthcare professionals for personalized medical advice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Blog Page -->
+    <div id="blog" class="page">
+        <main class="main-content">
+            <div class="container">
+                <div class="page-header animate-fade-in">
+                    <h1 class="page-title">Health & Wellness Blog</h1>
+                    <p class="page-description">Expert tips, guides, and insights for your fitness journey</p>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card animate-fade-in">
+                        <div class="blog-badge">Nutrition</div>
+                        <h2 class="blog-title">Understanding Macronutrients: A Complete Guide</h2>
+                        <p class="blog-excerpt">
+                            Learn about proteins, carbohydrates, and fats - how they fuel your body and support your fitness goals.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 15, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-fade-in" style="animation-delay: 0.1s;">
+                        <div class="blog-badge">Fitness</div>
+                        <h2 class="blog-title">Building a Sustainable Workout Routine</h2>
+                        <p class="blog-excerpt">
+                            Discover how to create an exercise plan that fits your lifestyle and keeps you motivated long-term.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 12, 2024</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="blog-badge">Weight Loss</div>
+                        <h2 class="blog-title">The Science of Healthy Weight Loss</h2>
+                        <p class="blog-excerpt">
+                            Evidence-based strategies for losing weight safely and maintaining your results without extreme dieting.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 8, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-fade-in" style="animation-delay: 0.3s;">
+                        <div class="blog-badge">Wellness</div>
+                        <h2 class="blog-title">Sleep and Recovery: The Hidden Key to Fitness</h2>
+                        <p class="blog-excerpt">
+                            Why quality sleep is crucial for your fitness goals and how to optimize your rest for better results.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 5, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-fade-in" style="animation-delay: 0.4s;">
+                        <div class="blog-badge">Nutrition</div>
+                        <h2 class="blog-title">Hydration: More Than Just Drinking Water</h2>
+                        <p class="blog-excerpt">
+                            Understanding the importance of proper hydration for performance, recovery, and overall health.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 1, 2024</span>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-fade-in" style="animation-delay: 0.5s;">
+                        <div class="blog-badge">Mental Health</div>
+                        <h2 class="blog-title">Mind-Body Connection in Fitness</h2>
+                        <p class="blog-excerpt">
+                            How mental health impacts physical fitness and practical strategies for maintaining both.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 28, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <main class="main-content">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info animate-fade-in">
+                        <h1 class="page-title">Get in Touch</h1>
+                        <p class="contact-description">
+                            Have questions about our tools or want to share feedback? We'd love to hear from you!
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <path d="M22 6l-10 7L2 6"></path>
+                                </svg>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">hello@fitlifebmi.com</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">San Francisco, CA</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                                <div>
+                                    <div class="contact-label">Response Time</div>
+                                    <div class="contact-value">Within 24 hours</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animate-slide-up">
+                        <div class="card-header">
+                            <h2 class="card-title">Send us a Message</h2>
+                            <p class="card-description">Fill out the form below and we'll get back to you soon</p>
+                        </div>
+                        <div class="card-content">
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="contactName" class="form-label">Name</label>
+                                    <input type="text" id="contactName" class="form-input" placeholder="John Doe" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail" class="form-label">Email</label>
+                                    <input type="email" id="contactEmail" class="form-input" placeholder="john@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactSubject" class="form-label">Subject</label>
+                                    <input type="text" id="contactSubject" class="form-input" placeholder="How can we help?" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea id="contactMessage" class="form-textarea" rows="5" placeholder="Tell us more..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    Send Message
+                                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 2L11 13"></path>
+                                        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Privacy Page -->
+    <div id="privacy" class="page">
+        <main class="main-content">
+            <div class="container">
+                <div class="legal-content">
+                    <h1 class="page-title animate-fade-in">Privacy Policy</h1>
+                    <p class="legal-update">Last updated: March 2024</p>
+
+                    <div class="card legal-card">
+                        <div class="card-content legal-section">
+                            <h2>1. Information We Collect</h2>
+                            <p>
+                                FitLife BMI is committed to protecting your privacy. We do not collect, store, or track any personal 
+                                health information you enter into our calculators. All calculations are performed locally in your browser, 
+                                and no data is transmitted to our servers.
+                            </p>
+
+                            <h2>2. Usage Data</h2>
+                            <p>
+                                We may collect anonymous usage statistics to improve our services, including page visits, browser type, 
+                                and general location data. This information cannot be used to identify you personally.
+                            </p>
+
+                            <h2>3. Cookies</h2>
+                            <p>
+                                We use essential cookies to ensure proper website functionality. These cookies do not store personal 
+                                information and are necessary for the website to operate correctly.
+                            </p>
+
+                            <h2>4. Third-Party Services</h2>
+                            <p>
+                                Our website may contain links to external sites. We are not responsible for the privacy practices of 
+                                these third-party websites. We encourage you to review their privacy policies.
+                            </p>
+
+                            <h2>5. Data Security</h2>
+                            <p>
+                                Since we don't collect personal health data, there is minimal risk to your privacy. However, we implement 
+                                industry-standard security measures to protect our website and any anonymous usage data.
+                            </p>
+
+                            <h2>6. Children's Privacy</h2>
+                            <p>
+                                Our services are not directed to individuals under 13 years of age. We do not knowingly collect 
+                                information from children.
+                            </p>
+
+                            <h2>7. Changes to This Policy</h2>
+                            <p>
+                                We may update this privacy policy from time to time. We will notify you of any changes by posting the 
+                                new policy on this page with an updated revision date.
+                            </p>
+
+                            <h2>8. Contact Us</h2>
+                            <p>
+                                If you have questions about this privacy policy, please contact us at privacy@fitlifebmi.com.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Terms Page -->
+    <div id="terms" class="page">
+        <main class="main-content">
+            <div class="container">
+                <div class="legal-content">
+                    <h1 class="page-title animate-fade-in">Terms of Service</h1>
+                    <p class="legal-update">Last updated: March 2024</p>
+
+                    <div class="card legal-card">
+                        <div class="card-content legal-section">
+                            <h2>1. Acceptance of Terms</h2>
+                            <p>
+                                By accessing and using FitLife BMI, you accept and agree to be bound by these Terms of Service. 
+                                If you do not agree with any part of these terms, please do not use our website.
+                            </p>
+
+                            <h2>2. Use of Service</h2>
+                            <p>
+                                Our calculators and tools are provided for informational purposes only. They are not intended to 
+                                replace professional medical advice, diagnosis, or treatment. Always consult qualified healthcare 
+                                providers for personalized health recommendations.
+                            </p>
+
+                            <h2>3. Accuracy of Information</h2>
+                            <p>
+                                While we strive to provide accurate calculations using industry-standard formulas, results may vary 
+                                based on individual factors. We do not guarantee the accuracy, completeness, or usefulness of any 
+                                information provided.
+                            </p>
+
+                            <h2>4. Limitation of Liability</h2>
+                            <p>
+                                FitLife BMI and its operators shall not be liable for any direct, indirect, incidental, consequential, 
+                                or punitive damages arising from your use of the website or reliance on the information provided.
+                            </p>
+
+                            <h2>5. User Responsibilities</h2>
+                            <p>
+                                You agree to use our website responsibly and not to misuse, interfere with, or attempt to gain 
+                                unauthorized access to our services. You are responsible for maintaining the confidentiality of any 
+                                account information.
+                            </p>
+
+                            <h2>6. Intellectual Property</h2>
+                            <p>
+                                All content, features, and functionality on FitLife BMI are owned by us and are protected by 
+                                international copyright, trademark, and other intellectual property laws.
+                            </p>
+
+                            <h2>7. Modifications</h2>
+                            <p>
+                                We reserve the right to modify or discontinue our services at any time without notice. We may also 
+                                update these terms periodically. Continued use of the website constitutes acceptance of modified terms.
+                            </p>
+
+                            <h2>8. Governing Law</h2>
+                            <p>
+                                These terms shall be governed by and construed in accordance with applicable laws, without regard to 
+                                conflict of law provisions.
+                            </p>
+
+                            <h2>9. Contact Information</h2>
+                            <p>
+                                For questions about these Terms of Service, please contact us at legal@fitlifebmi.com.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        <span>FitLife BMI</span>
+                    </div>
+                    <p class="footer-description">
+                        Professional health tools for your wellness journey. Calculate BMI, track calories, and achieve your fitness goals.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-nav-link>Home</a></li>
+                        <li><a href="#bmi-calculator" data-nav-link>BMI Calculator</a></li>
+                        <li><a href="#calorie-calculator" data-nav-link>Calorie Calculator</a></li>
+                        <li><a href="#about" data-nav-link>About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#blog" data-nav-link>Blog</a></li>
+                        <li><a href="#contact" data-nav-link>Contact</a></li>
+                        <li><a href="#privacy" data-nav-link>Privacy Policy</a></li>
+                        <li><a href="#terms" data-nav-link>Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitLife BMI. All rights reserved.</p>
+                <p class="footer-disclaimer">
+                    These tools are for informational purposes only. Consult healthcare professionals for medical advice.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span id="toastMessage"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
